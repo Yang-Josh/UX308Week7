@@ -1,4 +1,4 @@
-import {hello} from './functions.js';
+import {FtoC, hello} from './functions.js';
 
 function Question1(){
     return <section>
@@ -10,4 +10,13 @@ function Question1(){
     </section>;
 }
 
-export {Question1}
+function QuestionA (){
+    return <section>
+        write a function that converts fahrenheit to celcius
+        <h2> results</h2>
+        <p> FtoC(32) == "{FtoC(32)}"</p>
+        <p> FtoC(64) == "{FtoC(64)}"</p>
+        <p> FtoC(212) == "{FtoC(212)}"</p>
+    </section>
+}
+export {Question1, QuestionA}

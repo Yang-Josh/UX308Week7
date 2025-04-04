@@ -1,5 +1,8 @@
 function hello(name){
     return(`hello ${name}`);
 }
-
-export {hello}
+function FtoC (fahrenheit){
+    const celsius = (fahrenheit-32)*5/9;
+    return celsius;
+}
+export {hello, FtoC}
