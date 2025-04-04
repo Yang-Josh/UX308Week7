@@ -18,5 +18,62 @@ function Mowing (Width, Rate){
     return Time;
 }
 
+function AirQI (AQI){
+    var Quality = 0;
+    if (AQI<= 0 && AQI >= 50 ){
+     Quality = "Good";
+    }
+    else if (AQI <= 51 && AQI >= 100){
+        Quality = "Moderate";
+    }
+     else if (AQI <= 101 && AQI >= 150){
+        Quality = "Unhealthy for Sensitive Groups";
+    }
+     else if (AQI <= 151 && AQI >= 200){
+        Quality = "Unhealthy";
+    }
+    else if (AQI <= 201 && AQI >= 300){
+        Quality = "Very Unhealthy";
+    }
+    else if (AQI > 300){
+        Quality = "Hazardous";
+    }
+    else {
+        Quality = "Unknown";
+    }
+    return Quality;
+}
 
-export {hello, FtoC, SqFtoA, Mowing}
+function Yeeha (Yee_Ha) {
+    var Result = 0;
+    const Test = Yee_Ha/3;
+    if (isNaN(Test)){
+       const Test2 = Yee_Ha/7;
+        if (isNaN(Test2)){
+            Result = "Yee Ha";
+        }
+        else {
+            Result = "Yee";
+        }
+    }
+     else if (!isNaN(Test)){
+       const Test3 = Yee_Ha/7;
+       if (isNaN(Test3)){
+        Result = "Ha";
+       }
+       else{
+        Result = "Nada";
+       }
+    }
+    else{
+        Result = "Nada";
+    }
+    return Result;
+}
+
+function SlopeCalc (Rise, Run){
+    const Slope = Rise/Run;
+    return Slope;
+}
+
+export {hello, FtoC, SqFtoA, Mowing, AirQI, Yeeha, SlopeCalc}

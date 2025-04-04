@@ -1,4 +1,4 @@
-import {FtoC, Mowing, SqFtoA, hello} from './functions.js';
+import {SlopeCalc,Yeeha, AirQI, FtoC, Mowing, SqFtoA, hello} from './functions.js';
 
 function Question1 (){
     return <section>
@@ -40,4 +40,34 @@ function Question3 (){
     </section>
 }
 
-export {Question1, QuestionA, Question2, Question3}
+function Question4 (){
+    return <section>
+        4. Take AQI level and give results
+        <h2> results</h2>
+        <p>AirQI (1) == "{AirQI(1)}"</p>
+        <p>AirQI (100) == "{AirQI(1)}"</p>
+        <p>AirQI (1000) == "{AirQI(1)}"</p>
+    </section>
+}
+
+function Question5 (){
+    return <section>
+        5. Check if divisible by 3 and or 7
+        <h2> results</h2>
+        <p>Yeeha (3) == "{Yeeha (3)}"</p>
+        <p>Yeeha (3) == "{Yeeha (3)}"</p>
+        <p>Yeeha (3) == "{Yeeha (3)}"</p>
+    </section>
+}
+
+function Question6 (){
+    return <section>
+        6. Calculate slope
+        <h2> results</h2>
+        <p> SlopeCalc (4,2) == "{SlopeCalc (4,2)}"</p>
+        <p> SlopeCalc (4,2) == "{SlopeCalc (4,2)}"</p>
+        <p> SlopeCalc (4,2) == "{SlopeCalc (4,2)}"</p>
+    </section>
+}
+
+export {Question1, QuestionA, Question2, Question3, Question4, Question5, Question6}
