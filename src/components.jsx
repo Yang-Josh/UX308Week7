@@ -25,8 +25,8 @@ function Question2 (){
         2. Write a function that converts Square Feet to Acres
         <h2> results</h2>
     <p> SqFtoA(43560) == "{SqFtoA(43560)}"</p>
-    <p> SqFtoA(43560) == "{SqFtoA(43560)}"</p>
-    <p> SqFtoA(43560) == "{SqFtoA(43560)}"</p>
+    <p> SqFtoA(87120) == "{SqFtoA(87120)}"</p>
+    <p> SqFtoA(21780) == "{SqFtoA(21780)}"</p>
     </section>
 }
 
@@ -35,8 +35,8 @@ function Question3 (){
         3. Calculate lawn area and total mowing time 
         <h2> results</h2>
         <p> Mowing (5,5) == "{Mowing(5,5)}"</p>
-        <p> Mowing (5,5) == "{Mowing(5,5)}"</p>
-        <p> Mowing (5,5) == "{Mowing(5,5)}"</p>
+        <p> Mowing (10,5) == "{Mowing(10,5)}"</p>
+        <p> Mowing (5,50) == "{Mowing(5,50)}"</p>
     </section>
 }
 
@@ -45,8 +45,8 @@ function Question4 (){
         4. Take AQI level and give results
         <h2> results</h2>
         <p>AirQI (1) == "{AirQI(1)}"</p>
-        <p>AirQI (100) == "{AirQI(1)}"</p>
-        <p>AirQI (1000) == "{AirQI(1)}"</p>
+        <p>AirQI (100) == "{AirQI(100)}"</p>
+        <p>AirQI (1000) == "{AirQI(1000)}"</p>
     </section>
 }
 
@@ -55,8 +55,8 @@ function Question5 (){
         5. Check if divisible by 3 and or 7
         <h2> results</h2>
         <p>Yeeha (3) == "{Yeeha (3)}"</p>
-        <p>Yeeha (3) == "{Yeeha (3)}"</p>
-        <p>Yeeha (3) == "{Yeeha (3)}"</p>
+        <p>Yeeha (7) == "{Yeeha (7)}"</p>
+        <p>Yeeha (21) == "{Yeeha (21)}"</p>
     </section>
 }
 
@@ -65,8 +65,8 @@ function Question6 (){
         6. Calculate slope
         <h2> results</h2>
         <p> SlopeCalc (4,2) == "{SlopeCalc (4,2)}"</p>
-        <p> SlopeCalc (4,2) == "{SlopeCalc (4,2)}"</p>
-        <p> SlopeCalc (4,2) == "{SlopeCalc (4,2)}"</p>
+        <p> SlopeCalc (6,2) == "{SlopeCalc (6,2)}"</p>
+        <p> SlopeCalc (10,2) == "{SlopeCalc (10,2)}"</p>
     </section>
 }
 

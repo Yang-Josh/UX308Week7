@@ -20,19 +20,19 @@ function Mowing (Width, Rate){
 
 function AirQI (AQI){
     var Quality = 0;
-    if (AQI<= 0 && AQI >= 50 ){
+    if (AQI>= 0 && AQI <= 50 ){
      Quality = "Good";
     }
-    else if (AQI <= 51 && AQI >= 100){
+    else if (AQI >= 51 && AQI <= 100){
         Quality = "Moderate";
     }
-     else if (AQI <= 101 && AQI >= 150){
+     else if (AQI >= 101 && AQI <= 150){
         Quality = "Unhealthy for Sensitive Groups";
     }
-     else if (AQI <= 151 && AQI >= 200){
+     else if (AQI >= 151 && AQI <= 200){
         Quality = "Unhealthy";
     }
-    else if (AQI <= 201 && AQI >= 300){
+    else if (AQI >= 201 && AQI <= 300){
         Quality = "Very Unhealthy";
     }
     else if (AQI > 300){
@@ -47,27 +47,23 @@ function AirQI (AQI){
 function Yeeha (Yee_Ha) {
     var Result = 0;
     const Test = Yee_Ha/3;
-    if (isNaN(Test)){
-       const Test2 = Yee_Ha/7;
-        if (isNaN(Test2)){
-            Result = "Yee Ha";
-        }
-        else {
-            Result = "Yee";
-        }
+    const Test2 = Yee_Ha/7;
+
+    if (!isNaN(Test) && !isNaN(Test2)){
+        Result = "Yee Ha";
     }
-     else if (!isNaN(Test)){
-       const Test3 = Yee_Ha/7;
-       if (isNaN(Test3)){
+
+    else if(!isNaN(Test) && isNaN(Test2)){
+        Result = "Yee";
+    }
+
+    else if (isNaN(Test) && !isNaN(Test2)){
         Result = "Ha";
-       }
-       else{
-        Result = "Nada";
-       }
     }
-    else{
+
+    else {
         Result = "Nada";
-    }
+    }  
     return Result;
 }
 
