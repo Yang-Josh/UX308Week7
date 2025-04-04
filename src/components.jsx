@@ -1,4 +1,4 @@
-import {FtoC, SqtoA, hello} from './functions.js';
+import {FtoC, SqFtoA, hello} from './functions.js';
 
 function Question1(){
     return <section>
@@ -24,9 +24,9 @@ function Question2(){
     return <section>
         2. Write a function that converts Square Feet to Acres
         <h2> results</h2>
-    <p> SqFtoA(43560) == "{SqtoA(43560)}"</p>
-    <p> SqFtoA(43560) == "{SqtoA(43560)}"</p>
-    <p> SqFtoA(43560) == "{SqtoA(43560)}"</p>
+    <p> SqFtoA(43560) == "{SqFtoA(43560)}"</p>
+    <p> SqFtoA(43560) == "{SqFtoA(43560)}"</p>
+    <p> SqFtoA(43560) == "{SqFtoA(43560)}"</p>
     </section>
 }
 export {Question1, QuestionA, Question2}
