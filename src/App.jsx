@@ -1,11 +1,12 @@
-import {Question1, QuestionA, Question2} from './components.jsx';
+import {Question1, QuestionA, Question2, Question3} from './components.jsx';
 
 function App() {
   return (
     <>
         <Question1 />
         <QuestionA />
-        <Question2 />    
+        <Question2 />
+        <Question3 />        
     </>
   )
 }
