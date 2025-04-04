@@ -45,19 +45,19 @@ function AirQI (AQI){
 }
 
 function Yeeha (Yee_Ha) {
-    var Result = 0;
-    const Test = Yee_Ha/3;
-    const Test2 = Yee_Ha/7;
+    var Result = "";
+    const Test = Yee_Ha%3;
+    const Test2 = Yee_Ha%7;
 
-    if (!isNaN(Test) && !isNaN(Test2)){
+    if (Test==0 && Test2==0){
         Result = "Yee Ha";
     }
 
-    else if(!isNaN(Test) && isNaN(Test2)){
+    else if(Test==0 && Test2!=0){
         Result = "Yee";
     }
 
-    else if (isNaN(Test) && !isNaN(Test2)){
+    else if (Test!=0 && Test2==0){
         Result = "Ha";
     }
 
