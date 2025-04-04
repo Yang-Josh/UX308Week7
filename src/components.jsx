@@ -1,4 +1,4 @@
-import {FtoC, hello} from './functions.js';
+import {FtoC, SqtoA, hello} from './functions.js';
 
 function Question1(){
     return <section>
@@ -12,11 +12,21 @@ function Question1(){
 
 function QuestionA (){
     return <section>
-        write a function that converts fahrenheit to celcius
+        A. Write a function that converts fahrenheit to celcius
         <h2> results</h2>
         <p> FtoC(32) == "{FtoC(32)}"</p>
         <p> FtoC(64) == "{FtoC(64)}"</p>
         <p> FtoC(212) == "{FtoC(212)}"</p>
     </section>
 }
-export {Question1, QuestionA}
+
+function Question2(){
+    return <section>
+        2. Write a function that converts Square Feet to Acres
+        <h2> results</h2>
+    <p> SqFtoA(43560) == "{SqtoA(43560)}"</p>
+    <p> SqFtoA(43560) == "{SqtoA(43560)}"</p>
+    <p> SqFtoA(43560) == "{SqtoA(43560)}"</p>
+    </section>
+}
+export {Question1, QuestionA, Question2}
