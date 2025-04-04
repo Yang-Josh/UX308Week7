@@ -8,7 +8,7 @@ function FtoC (fahrenheit){
 }
 
 function SqFtoA (SqFeet){
-    const Acres =(SqFeet*43560);
+    const Acres =(SqFeet/43560);
     return Acres;
 }
 export {hello, FtoC, SqFtoA}
